@@ -5,9 +5,13 @@
 
 /* Base */
 @import 'base/reset';
-@import 'base/grid';
 @import 'base/typography';
 
 /* Layout */
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/main-content';
+@import 'layout/footer';
 
 /* Components */
