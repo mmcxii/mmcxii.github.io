@@ -1,3 +1,3 @@
-import { scroll } from './SmoothScroll';
+import { scroll } from './util/SmoothScroll';
 
 scroll;
