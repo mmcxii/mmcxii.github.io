@@ -1,1 +1,3 @@
-console.log('testing! <3 wp');
+import { scroll } from './SmoothScroll';
+
+scroll;
