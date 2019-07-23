@@ -5,7 +5,8 @@
     "description": "My personal portfolio, circa 2019",
     "main": "index.js",
     "scripts": {
-        "start": "webpack --config webpack.config.js"
+        "start": "webpack-dev-server --config webpack.dev.js --open",
+        "build": "webpack --config webpack.prod.js"
     },
     "repository": {
         "type": "git",
@@ -25,7 +26,9 @@
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
         "webpack": "^4.37.0",
-        "webpack-cli": "^3.3.6"
+        "webpack-cli": "^3.3.6",
+        "webpack-dev-server": "^3.7.2",
+        "webpack-merge": "^4.2.1"
     },
     "dependencies": {
         "smooth-scroll": "^16.1.0"
