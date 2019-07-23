@@ -1,0 +1,19 @@
+.logo {
+    &--main {
+        grid-area: logo;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &::before {
+            content: '<';
+            color: var(--clr-primary-light);
+            margin-right: $margin-sm;
+        }
+
+        &::after {
+            content: '>';
+            color: var(--clr-primary-light);
+            margin-left: $margin-sm;
+        }
+    }
+}

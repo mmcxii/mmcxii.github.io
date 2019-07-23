@@ -1,5 +1,5 @@
 /* Main JS */
 import { scroll } from './util/SmoothScroll';
-import './assets/css/main.css';
+import './assets/sass/main.scss';
 
 scroll;

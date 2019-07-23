@@ -1,0 +1,75 @@
+.tech {
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, auto-fill);
+
+        padding: $margin-sm;
+        padding-left: 0;
+    }
+
+    &__item {
+        $_size: 100px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: $margin-sm;
+
+        &:nth-child(odd):last-child {
+            grid-column: 1 / span 2;
+        }
+
+        &.vscode {
+            color: #23a9f2;
+        }
+
+        &.sass {
+            color: #cd669a;
+        }
+
+        &.github {
+            color: #fff;
+        }
+
+        &.webpack {
+            color: #1c78c0;
+        }
+
+        &.nodejs {
+            color: #689f63;
+        }
+
+        &.mongodb {
+            color: #599736;
+        }
+
+        &.react {
+            color: #61dafb;
+        }
+
+        &.coming-soon {
+            &::before {
+                content: 'Coming Soon!';
+                color: white;
+                background: rgba(128, 128, 128, 0.7);
+                border: 2px solid white;
+                padding: $margin-xs;
+                text-align: center;
+                transform: rotate(25deg);
+                position: absolute;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: $icon-size;
+        margin-bottom: $margin-xs;
+    }
+
+    &__title {
+        color: inherit;
+        font-family: $ff-b;
+    }
+}
