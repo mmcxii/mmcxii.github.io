@@ -35,7 +35,10 @@ body {
   grid-template-columns: 2rem auto;
   grid-template-rows: -webkit-max-content 100vh auto -webkit-max-content;
   grid-template-rows: max-content 100vh auto max-content;
-  grid-template-areas: 'header header' 'hero hero' 'main-content main-content' 'footer footer';
+  grid-template-areas: 'header header'
+ 'hero hero'
+ 'main-content main-content'
+ 'footer footer';
 }
 
 .header {
@@ -47,7 +50,8 @@ body {
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   grid-row-gap: 1rem;
-  grid-template-areas: '. logo .' '. nav . ';
+  grid-template-areas: '. logo .'
+ '. nav . ';
   background: var(--clr-primary-dark);
   color: var(--clr-primary-light);
 }
@@ -55,6 +59,7 @@ body {
 .hero {
   background-color: rgba(0, 0, 0, 0.3);
   background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
   background-position-x: 15%;
   background-size: cover;
   background-blend-mode: darken;
@@ -75,7 +80,9 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, -webkit-max-content);
   grid-template-rows: repeat(3, max-content);
-  grid-template-areas: 'intro' 'portfolio' 'contact';
+  grid-template-areas: 'intro'
+ 'portfolio'
+ 'contact';
 }
 
 .footer {
