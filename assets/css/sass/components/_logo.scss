@@ -2,6 +2,7 @@
     &--main {
         grid-area: logo;
         margin: 0 auto;
+        cursor: pointer;
 
         &::before {
             content: '<';
