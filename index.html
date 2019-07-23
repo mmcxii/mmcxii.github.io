@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Nich Secord</title>
+        <title>Nich Secord - Developer</title>
         <script
             defer
             src="https://pro.fontawesome.com/releases/v5.9.0/js/all.js"
@@ -16,14 +16,13 @@
     </head>
     <body>
         <header class="header" id="top">
-            <h1 class="main-heading">Nich Secord</h1>
-        </header>
-        <aside class="sidebar">
+            <h1 class="logo--main">Nich Secord</h1>
+
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <i class="nav__icon"></i>
-                        <a href="#top" class="nav__link">Home</a>
+                        <a href="#intro" class="nav__link">About Me</a>
                     </li>
                     <li class="nav__item">
                         <i class="nav__icon"></i>
@@ -35,29 +34,199 @@
                     </li>
                 </ul>
             </nav>
+        </header>
+
+        <aside class="social">
+            <a href="https://github.com/mmcxii" class="social__link" target="blank">
+                <i class="social__icon fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mmcxii/" class="social__link" target="blank">
+                <i class="social__icon fab fa-linkedin-in"></i>
+            </a>
+            <a
+                href="https://stackoverflow.com/users/11168037/nich-secord?tab=profile"
+                class="social__link"
+                target="blank"
+            >
+                <i class="social__icon fab fa-stack-overflow"></i>
+            </a>
         </aside>
+
+        <div class="hero">
+            <h2 class="hero__text">Let's Make Something Great Together!</h2>
+        </div>
+
         <main class="main-content">
-            <section class="page" id="intro">Intro</section>
-            <section class="page" id="portfolio">Portfolio</section>
-            <section class="page" id="contact">Contact</section>
+            <section class="section intro" id="intro">
+                <h2 class="section__title">About Me</h2>
+                <p class="section__intro">
+                    Hello! My name is Nich Secord, a full stack developer (in training) based in the Seattle,
+                    Washigton area. I enjoy everything about this industry, from designing and creating
+                    beautiful, responsive, front-end layouts to creating dynamic functionality on the
+                    back-end. If it involves web technologies then I love it and want to learn everything I
+                    can about it.
+                </p>
+                <p class="section__intro">
+                    When away from the office I love spending time outdoors and/ or with friends. I enjoy
+                    skiing, hiking, and camping;
+                </p>
+
+                <section class="subsection tech">
+                    <h3 class="section__title">Technologies I Use</h3>
+                    <p class="section__intro">
+                        These are some of the various technologies I enjoy as part of my workflow, I love
+                        learning about new tools and I am always looking to expand my kit. Click on one to
+                        find out more about the technology and how I use it!
+                    </p>
+                    <div class="tech__items">
+                        <article class="tech__item vscode">
+                            <i class="tech__icon fas fa-code"></i>
+                            <h4 class="tech__title">VS Code</h4>
+                        </article>
+                        <article class="tech__item github">
+                            <i class="tech__icon fab fa-github"></i>
+                            <h4 class="tech__title">Github</h4>
+                        </article>
+                        <article class="tech__item sass">
+                            <i class="tech__icon fab fa-sass"></i>
+                            <h4 class="tech__title">Sass</h4>
+                        </article>
+                        <article class="tech__item nodejs coming-soon">
+                            <i class="tech__icon fab fa-node-js"></i>
+                            <h4 class="tech__title">Node.js</h4>
+                        </article>
+                        <article class="tech__item mongodb coming-soon">
+                            <i class="tech__icon fas fa-database"></i>
+                            <h4 class="tech__title">MongoDB</h4>
+                        </article>
+                        <article class="tech__item react coming-soon">
+                            <i class="tech__icon fab fa-react"></i>
+                            <h4 class="tech__title">React</h4>
+                        </article>
+                    </div>
+                </section>
+            </section>
+
+            <section class="section portfolio" id="portfolio">
+                <h2 class="section__title">My Work</h2>
+
+                <p class="section__intro">
+                    Over the course of my career these projects stand out to me as examples of my best work.
+                    The designs are some of my personal favorites and I am proud of the functionality each one
+                    has. Click on a project to learn more about what it is, what it does, and what went into
+                    making it.
+                </p>
+
+                <article class="portfolio__item lets-taco-bout-it">
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">
+                            <a
+                                href="https://mmcxii.github.io/lets-taco-bout-it/"
+                                class="portfolio__link"
+                                target="blank"
+                            >
+                                Let's Taco Bout It
+                            </a>
+                        </h3>
+                        <a
+                            href="https://github.com/mmcxii/lets-taco-bout-it"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                        </a>
+                    </div>
+                    <img
+                        src="assets/img/screenshots/lets-taco-bout-it.png"
+                        alt="A screenshot of the 'Let's Taco 'Bout It' website"
+                        class="portfolio__image"
+                    />
+                </article>
+
+                <article class="portfolio__item">
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">
+                            <a
+                                href="https://mmcxii.github.io/rps-multiplayer/"
+                                class="portfolio__link"
+                                target="blank"
+                            >
+                                RPS: The Gathering
+                            </a>
+                        </h3>
+                        <a
+                            href="https://github.com/mmcxii/rps-multiplayer"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                        </a>
+                    </div>
+                    <img
+                        src="assets/img/screenshots/roshambo-the-gathering.png"
+                        alt="A screenshot of the 'Ro Sham Bo: The Gathering' website"
+                        class="portfolio__image"
+                    />
+                </article>
+
+                <article class="portfolio__item">
+                    <div class="portfolio__caption">
+                        <h3 class="portfolio__title">
+                            <a
+                                href="https://mmcxii.github.io/gif-tastic/"
+                                class="portfolio__link"
+                                target="blank"
+                            >
+                                Gifs for Casey
+                            </a>
+                        </h3>
+                        <a
+                            href="https://github.com/mmcxii/gif-tastic"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                        </a>
+                    </div>
+                    <img
+                        src="assets/img/screenshots/gifs-of-things-casey-likes.png"
+                        alt="A screenshot of the 'Gifs of Things Casey Likes' website"
+                        class="portfolio__image"
+                    />
+                </article>
+            </section>
+
+            <section class="section contact" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <form class="contact-form">
+                    <div class="contact-form__group">
+                        <label for="name" class="contact-form__label">Your Name</label>
+                        <input class="contact-form__input" type="text" name="name" id="contact-name" />
+                    </div>
+                    <div class="contact-form__group">
+                        <label for="email" class="contact-form__label">Your Email</label>
+                        <input class="contact-form__input" type="email" name="email" id="contact-email" />
+                    </div>
+                    <div class="contact-form__group">
+                        <label for="message" class="contact-form__label">Your Message</label>
+                        <textarea
+                            class="contact-form__text"
+                            name="message"
+                            id="contact-message"
+                            cols="30"
+                            rows="10"
+                        ></textarea>
+                    </div>
+                    <button class="btn contact-form__btn" type="submit">Send Message</button>
+                </form>
+            </section>
         </main>
+
         <footer class="footer">
             <div class="byline">Nich Secord &copy;2019</div>
-
-            <div class="social">
-                <a href="https://github.com/mmcxii" class="social__link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/mmcxii/" class="social__link">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                    href="https://stackoverflow.com/users/11168037/nich-secord?tab=profile"
-                    class="social__link"
-                >
-                    <i class="fab fa-stack-overflow"></i>
-                </a>
-            </div>
         </footer>
+        <a href="#top" class="return-top-btn">
+            <i class="fas fa-arrow-to-top"></i>
+        </a>
     </body>
 </html>

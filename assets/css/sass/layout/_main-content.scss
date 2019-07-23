@@ -1,4 +1,11 @@
 .main-content {
     grid-area: main-content;
-    background: lightgray;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-template-areas:
+        'intro'
+        'portfolio'
+        'contact';
 }

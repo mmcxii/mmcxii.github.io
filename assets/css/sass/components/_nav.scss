@@ -1,0 +1,22 @@
+.nav {
+    grid-area: nav;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__item {
+        list-style: none;
+        text-align: center;
+
+        &:not(:last-child) {
+            border-right: 2px solid var(--clr-primary-light);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+}
