@@ -1,0 +1,17 @@
+.header {
+    grid-area: header;
+    width: 100%;
+
+    padding: $margin-sm 0;
+
+    display: grid;
+    grid-template-columns: $container-margin auto $container-margin;
+    grid-template-rows: min-content min-content;
+    grid-row-gap: $grid-gap;
+    grid-template-areas:
+        '. logo .'
+        '. nav . ';
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-primary-light);
+}

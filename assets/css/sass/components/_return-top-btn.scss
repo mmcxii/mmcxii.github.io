@@ -1,0 +1,26 @@
+.return-top-btn {
+    position: fixed;
+    bottom: $margin-sm;
+    left: $container-margin * 0.4;
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-orange);
+
+    $_size: $fs-b * 2;
+
+    text-align: center;
+    height: $_size;
+    width: $_size;
+    line-height: $_size;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+
+    box-shadow: 0 0 4px var(--clr-primary-light);
+
+    &:hover,
+    &:focus {
+        background: var(--clr-primary-dark-2);
+        transition: all ease-in-out 300ms;
+    }
+}
