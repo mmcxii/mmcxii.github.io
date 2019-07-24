@@ -1,0 +1,40 @@
+.section {
+    padding: $margin-sm $container-margin $margin-sm ($container-margin + $icon-size);
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-primary-light);
+
+    &:nth-child(even) {
+        background: var(--clr-primary-light);
+        color: var(--clr-primary-dark);
+
+        & .section__title::before,
+        & .section__title::after {
+            color: var(--clr-primary-dark);
+        }
+    }
+
+    &__title {
+        margin-bottom: $margin-xs;
+
+        &::before {
+            content: '<';
+            color: var(--clr-primary-light);
+            margin-right: $margin-xs;
+        }
+
+        &::after {
+            content: '>';
+            color: var(--clr-primary-light);
+            margin-left: $margin-xs;
+        }
+    }
+
+    &__intro {
+        margin-bottom: $margin-sm;
+    }
+}
+
+.subsection {
+    margin-top: $margin-sm;
+}
