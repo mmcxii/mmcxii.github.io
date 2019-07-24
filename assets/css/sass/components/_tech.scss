@@ -2,19 +2,24 @@
     &__items {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
 
         padding-left: 0;
     }
 
     &__item {
-        $_size: 100px;
-
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: $margin-md;
+        margin: $margin-md auto;
+        min-width: 50%;
+        transition: all ease-in-out 300ms;
+
+        @include mq(sm) {
+            min-width: auto;
+            margin: $margin-md;
+        }
 
         &.vscode {
             color: #23a9f2;
@@ -24,8 +29,12 @@
             color: #cd669a;
         }
 
-        &.github {
-            color: #fff;
+        &.js {
+            color: #f0db4f;
+        }
+
+        &.git {
+            color: #f05033;
         }
 
         &.nodejs {

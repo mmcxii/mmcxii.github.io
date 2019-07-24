@@ -5,13 +5,8 @@
     color: var(--clr-primary-light);
 
     &:nth-child(even) {
-        background: var(--clr-primary-light);
-        color: var(--clr-primary-dark);
-
-        & .section__title::before,
-        & .section__title::after {
-            color: var(--clr-primary-dark);
-        }
+        background: var(--clr-primary-dark-2);
+        color: var(--clr-primary-light);
     }
 
     &__title {

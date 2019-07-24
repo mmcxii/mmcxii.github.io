@@ -89,12 +89,19 @@
                                 <h4 class="tech__title">Sass</h4>
                             </button>
                         </article>
-                        <article class="tech__item github">
+                        <article class="tech__item js">
                             <button class="btn--trans">
-                                <i class="tech__icon fab fa-github"></i>
-                                <h4 class="tech__title">Github</h4>
+                                <i class="tech__icon fab fa-js-square"></i>
+                                <h4 class="tech__title">Javascript</h4>
                             </button>
                         </article>
+                        <article class="tech__item git">
+                            <button class="btn--trans">
+                                <i class="tech__icon fab fa-git-alt"></i>
+                                <h4 class="tech__title">Git</h4>
+                            </button>
+                        </article>
+
                         <article class="tech__item nodejs">
                             <button class="btn--trans">
                                 <i class="tech__icon fab fa-node-js"></i>
@@ -130,90 +137,155 @@
                     Over the course of my career these projects stand out to me as examples of my best work.
                     The designs are some of my personal favorites and I am proud of the functionality each one
                     has. Click on a project's name to see it live, or click on the Github icon to see the its
-                    reposityory. Or click on the thumbnail to learn more about what it is, what it does, and
-                    the stack behind it.
+                    repositrory.
                 </p>
 
                 <section class="portfolio__items">
-                    <article class="portfolio__item lets-taco-bout-it">
-                        <div class="portfolio__caption">
-                            <h3 class="portfolio__title">
-                                <a
-                                    href="https://mmcxii.github.io/lets-taco-bout-it/"
-                                    class="portfolio__link"
-                                    target="blank"
-                                >
-                                    Let's Taco Bout It
-                                </a>
-                            </h3>
+                    <article class="portfolio__item">
+                        <h3 class="portfolio__title">
                             <a
-                                href="https://github.com/mmcxii/lets-taco-bout-it"
-                                class="portfolio__link--icon"
+                                href="https://mmcxii.github.io/lets-taco-bout-it/"
+                                class="portfolio__link"
                                 target="blank"
                             >
-                                <i class="social__icon fab fa-github"></i>
-                                <span class="sr-only">"Let's Taco Bout It" Github Repository</span>
+                                Let's Taco Bout It
                             </a>
+                        </h3>
+                        <div class="portfolio__description">
+                            <div class="portfolio__stack">
+                                <i class="tech__icon fab fa-html5"></i>
+                                <i class="tech__icon fab fa-sass"></i>
+                                <i class="tech__icon fab fa-js-square"></i>
+                                <i class="tech__icon fab fa-git-alt"></i>
+                                <i class="tech__icon fas fa-taco"></i>
+                                <i class="tech__icon fab fa-yelp"></i>
+                            </div>
+                            <p class="portfolio__description__p">
+                                This was the first group project I participated in during my Boot Camp in
+                                2019. I collaborated on the front-end, creating uniform components to be used
+                                across the site. We agreed on a mobile first approach to ensure that the site
+                                would look good on screens of all sizes, and I helped my fellow front-end
+                                collaborator to learn and use the Sass CSS pre-processor. We agreed to use the
+                                BEM class naming convetion to remove the overhead of deciding what to call
+                                certain elements, as well as for its ease of use with Sass's nesting
+                                functionality.
+                            </p>
+                            <p class="portfolio__description__p">
+                                As this was my first collaborative project it was also my introduction to Git
+                                and Github's tools for working with teammates. I greatly enjoyed working with
+                                my team; we communicated well and took great care in planning who was
+                                responsible for which parts of the documents. Thanks to our careful planning
+                                we had less than five total merge conflicts and the project was a true joy to
+                                work on.
+                            </p>
+                            <p class="portfolio__description__p">
+                                Though I did not play a role in creating the back-end for this project I did
+                                help select the API's that our team used: the Taco Fancy API, and the Yelp
+                                API.
+                            </p>
                         </div>
                         <img
                             src="./assets/img/screenshots/lets-taco-bout-it.png"
                             alt="A screenshot of the 'Let's Taco 'Bout It' website"
-                            class="portfolio__image"
+                            class="portfolio__thumbnail"
                         />
+                        <a
+                            href="https://github.com/mmcxii/lets-taco-bout-it"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                            <span class="sr-only">"Let's Taco Bout It" Github Repository</span>
+                        </a>
                     </article>
 
                     <article class="portfolio__item">
-                        <div class="portfolio__caption">
-                            <h3 class="portfolio__title">
-                                <a
-                                    href="https://mmcxii.github.io/rps-multiplayer/"
-                                    class="portfolio__link"
-                                    target="blank"
-                                >
-                                    RPS: The Gathering
-                                </a>
-                            </h3>
+                        <h3 class="portfolio__title">
                             <a
-                                href="https://github.com/mmcxii/rps-multiplayer"
-                                class="portfolio__link--icon"
+                                href="https://mmcxii.github.io/rps-multiplayer/"
+                                class="portfolio__link"
                                 target="blank"
                             >
-                                <i class="social__icon fab fa-github"></i>
-                                <span class="sr-only">"RPS: The Gathering" Github Repository</span>
+                                RPS: The Gathering
                             </a>
+                        </h3>
+                        <div class="portfolio__description">
+                            <div class="portfolio__stack">
+                                <i class="tech__icon fab fa-html5"></i>
+                                <i class="tech__icon fab fa-sass"></i>
+                                <i class="tech__icon fab fa-js-square"></i>
+                                <i class="tech__icon fab fa-git-alt"></i>
+                                <i class="tech__icon fas fa-fire"></i>
+                            </div>
+                            <p class="portfolio__description__p">
+                                This game was my first interaction with any sort of database, in this case
+                                Google Firebase. I found this project <em>extremely</em> challenging and it
+                                took my longer than any assignment throughout the Boot Camp to this point. To
+                                be precise, I had troubles grasping how I was to structure my database calls
+                                in conjunction with handling which user was which, and keeping track of users
+                                when one would leave the lobby. I am very pleased with how well the app came
+                                together in the end after how long I struggled with getting it to function.
+                            </p>
+                            <p class="portfolio__description__p">
+                                The theme is based entirely on the card game,
+                                <cite>Magic: the Gathering</cite>, a strategy game my friends and I have
+                                enjoyed for a decade now. This is one of my favorite designs I have executed
+                                in my career; in particular I love the way the buttons change when one is
+                                hovered, and how the content cards change color every time the page is loaded.
+                                It is a simple design to be sure but the look of the project came together
+                                exactly how I pictured it in my mind.
+                            </p>
                         </div>
                         <img
                             src="./assets/img/screenshots/roshambo-the-gathering.png"
                             alt="A screenshot of the 'Ro Sham Bo: The Gathering' website"
-                            class="portfolio__image"
+                            class="portfolio__thumbnail"
                         />
+                        <a
+                            href="https://github.com/mmcxii/rps-multiplayer"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                            <span class="sr-only">"RPS: The Gathering" Github Repository</span>
+                        </a>
                     </article>
 
                     <article class="portfolio__item">
-                        <div class="portfolio__caption">
-                            <h3 class="portfolio__title">
-                                <a
-                                    href="https://mmcxii.github.io/gif-tastic/"
-                                    class="portfolio__link"
-                                    target="blank"
-                                >
-                                    Gifs for Casey
-                                </a>
-                            </h3>
+                        <h3 class="portfolio__title">
                             <a
-                                href="https://github.com/mmcxii/gif-tastic"
-                                class="portfolio__link--icon"
+                                href="https://mmcxii.github.io/gif-tastic/"
+                                class="portfolio__link"
                                 target="blank"
                             >
-                                <i class="social__icon fab fa-github"></i>
-                                <span class="sr-only">"Gifs for Casey" Github Repository</span>
+                                Gifs for Casey
                             </a>
+                        </h3>
+                        <div class="portfolio__description">
+                            <div class="portfolio__stack">
+                                <i class="tech__icon fab fa-html5"></i>
+                                <i class="tech__icon fab fa-sass"></i>
+                                <i class="tech__icon fab fa-js-square"></i>
+                                <i class="tech__icon fab fa-git-alt"></i>
+                                <i class="tech__icon fas fa-images"></i>
+                            </div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in ab molestias
+                            consectetur maiores nostrum dolores aspernatur tempora quasi deserunt placeat
+                            amet, dolorum ea officiis, possimus id impedit sequi totam.
                         </div>
                         <img
                             src="./assets/img/screenshots/gifs-of-things-casey-likes.png"
                             alt="A screenshot of the 'Gifs of Things Casey Likes' website"
-                            class="portfolio__image"
+                            class="portfolio__thumbnail"
                         />
+                        <a
+                            href="https://github.com/mmcxii/gif-tastic"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                            <span class="sr-only">"Gifs for Casey" Github Repository</span>
+                        </a>
                     </article>
                 </section>
             </section>
@@ -277,11 +349,13 @@
 
         <a href="#top" class="return-top-btn">
             <i class="fas fa-arrow-to-top"></i>
+            <span class="sr-only">Return to the top of the page</span>
         </a>
         <!-- Vendor Js -->
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 
         <!-- Front End Js -->
         <script src="assets/js/utils/SmoothScroll.js"></script>
+        <script src="assets/js/utils/ShowReturnTopBtn.js"></script>
     </body>
 </html>

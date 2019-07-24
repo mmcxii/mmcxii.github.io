@@ -1,10 +1,11 @@
 .return-top-btn {
     position: fixed;
     bottom: $margin-sm;
-    left: calc(var(--icon-size) * 0.25);
+    left: -125%;
 
     background: var(--clr-primary-dark);
     color: var(--clr-orange);
+    box-shadow: 0 0 4px var(--clr-primary-light);
 
     text-align: center;
     height: var(--icon-size);
@@ -15,11 +16,17 @@
     border-radius: 50%;
     cursor: pointer;
 
-    box-shadow: 0 0 4px var(--clr-primary-light);
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
 
     &:hover,
     &:focus {
         background: var(--clr-primary-dark-2);
         transition: all ease-in-out 300ms;
+    }
+
+    &.visable {
+        opacity: 1;
+        left: calc(var(--icon-size) * 0.25);
     }
 }

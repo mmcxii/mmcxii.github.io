@@ -1,8 +1,8 @@
 .footer {
     grid-area: footer;
-    background: var(--clr-primary-light);
-    color: var(--clr-primary-dark);
+    background: var(--clr-primary-dark-2);
+    color: var(--clr-primary-light);
 
     text-align: center;
-    padding: $grid-gap 0;
+    padding: $margin-md 0;
 }

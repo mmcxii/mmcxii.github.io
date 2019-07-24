@@ -7,10 +7,10 @@
     border-radius: $rounded;
     max-height: 54px;
     cursor: pointer;
+    transition: all ease-in-out 300ms;
 
     &:hover,
     &:focus {
-        transition: ease-in-out 300ms;
         background: var(--clr-primary-dark-2);
     }
 
