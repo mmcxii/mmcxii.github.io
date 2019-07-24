@@ -1,0 +1,27 @@
+.header {
+    grid-area: header;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+    padding: $margin-sm 0;
+
+    display: grid;
+    grid-template-columns: var(--container-margin) auto var(--container-margin);
+    grid-template-rows: min-content min-content;
+    grid-row-gap: $grid-gap;
+    grid-template-areas:
+        '. logo .'
+        '. nav . ';
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-primary-light);
+    box-shadow: 0 2px 3px var(--clr-primary-dark);
+
+    @include mq(lg) {
+        grid-template-columns: var(--container-margin) max-content 1fr max-content var(--container-margin);
+        grid-template-rows: min-content;
+        grid-template-areas: '. logo . nav .';
+    }
+}

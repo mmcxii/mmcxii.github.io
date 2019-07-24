@@ -1,0 +1,57 @@
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+// Font Families
+$ff-h: 'Satisfy', cursive;
+$ff-b: 'Ubuntu Mono', monospace;
+
+//Layout
+$grid-gap: 1rem;
+$margin-xs: $grid-gap * 0.5;
+$margin-sm: $grid-gap;
+$margin-md: $margin-sm * 2;
+$margin-lg: $margin-md * 2;
+$margin-xl: $margin-lg * 2;
+
+// Style
+$rounded: 10px;
+$fs-b: 1rem;
+$fs-nav: 1.1rem;
+$fs-h1: 2.5rem;
+
+:root {
+    // Colors
+    --clr-primary-dark: #171a27;
+    --clr-primary-dark-2: #2a2f47;
+    --clr-primary-light: #e5e5e5;
+    --clr-blue: #00acf6;
+    --clr-yellow: #ece41d;
+    --clr-orange: #ff8e30;
+    --clr-green: #74d992;
+
+    // layout
+    --container-margin: 1rem;
+
+    @include mq(md) {
+        --container-margin: 2rem;
+    }
+
+    @include mq(lg) {
+        --container-margin: 4rem;
+    }
+
+    @include mq(xl) {
+        --container-margin: 20%;
+    }
+
+    //Component
+    --icon-size: 2rem;
+
+    @include mq(md) {
+        --icon-size: 2.5rem;
+    }
+}

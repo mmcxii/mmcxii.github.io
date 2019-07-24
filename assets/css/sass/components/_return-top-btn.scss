@@ -1,0 +1,32 @@
+.return-top-btn {
+    position: fixed;
+    bottom: $margin-sm;
+    left: -125%;
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-orange);
+    box-shadow: 0 0 4px var(--clr-primary-light);
+
+    text-align: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    line-height: var(--icon-size);
+    font-size: calc(var(--icon-size) * 0.5);
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        background: var(--clr-primary-dark-2);
+        transition: all ease-in-out 300ms;
+    }
+
+    &.visable {
+        opacity: 1;
+        left: calc(var(--icon-size) * 0.25);
+    }
+}

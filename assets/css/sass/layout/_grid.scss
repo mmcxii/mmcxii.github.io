@@ -1,0 +1,11 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: var(--icon-size) auto;
+    grid-template-rows: max-content 100vh auto max-content;
+    grid-template-areas:
+        'header header'
+        'hero hero'
+        'main-content main-content'
+        'footer footer';
+}

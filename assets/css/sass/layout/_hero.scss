@@ -1,0 +1,33 @@
+.hero {
+    grid-area: hero;
+
+    background: url(../img/hero.png), no-repeat;
+    background-position-x: 15%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+
+    &::before {
+        content: '';
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+    }
+
+    &__text {
+        color: var(--clr-primary-light);
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        z-index: 1;
+        font-size: $fs-h1 * 0.65;
+    }
+}

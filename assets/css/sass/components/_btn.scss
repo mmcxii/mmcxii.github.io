@@ -1,0 +1,27 @@
+.btn {
+    font-weight: bolder;
+    color: var(--clr-blue);
+    background: var(--clr-primary-dark);
+    border: 2px solid var(--clr-primary-light);
+    padding: $margin-sm 0;
+    border-radius: $rounded;
+    max-height: 54px;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+
+    &:hover,
+    &:focus {
+        background: var(--clr-primary-dark-2);
+    }
+
+    &--trans {
+        border: none;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: initial;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.section {
+    padding: $margin-sm var(--container-margin) $margin-sm calc(var(--container-margin) + var(--icon-size));
+
+    background: var(--clr-primary-dark);
+    color: var(--clr-primary-light);
+
+    &:nth-child(even) {
+        background: var(--clr-primary-dark-2);
+        color: var(--clr-primary-light);
+    }
+
+    &__title {
+        margin-bottom: $margin-xs;
+
+        &::before {
+            content: '<';
+            color: var(--clr-primary-light);
+            margin-right: $margin-xs;
+        }
+
+        &::after {
+            content: '>';
+            color: var(--clr-primary-light);
+            margin-left: $margin-xs;
+        }
+    }
+
+    &__intro {
+        margin-bottom: $margin-sm;
+    }
+}

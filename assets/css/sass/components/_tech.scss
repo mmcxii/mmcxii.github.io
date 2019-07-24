@@ -1,0 +1,79 @@
+.tech {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        padding-left: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: $margin-md auto;
+        min-width: 50%;
+        transition: all ease-in-out 300ms;
+
+        @include mq(sm) {
+            min-width: auto;
+            margin: $margin-md;
+        }
+
+        &.vscode {
+            color: #23a9f2;
+        }
+
+        &.sass {
+            color: #cd669a;
+        }
+
+        &.js {
+            color: #f0db4f;
+        }
+
+        &.git {
+            color: #f05033;
+        }
+
+        &.nodejs {
+            color: #689f63;
+        }
+
+        &.webpack {
+            color: #1c78c0;
+        }
+
+        &.mongodb {
+            color: #599736;
+        }
+
+        &.react {
+            color: #61dafb;
+        }
+
+        &.coming-soon {
+            &::before {
+                content: 'Coming Soon!';
+                color: white;
+                background: rgba(128, 128, 128, 0.7);
+                border: 2px solid white;
+                padding: $margin-xs;
+                text-align: center;
+                transform: rotate(25deg);
+                position: absolute;
+            }
+        }
+    }
+
+    &__icon {
+        font-size: var(--icon-size);
+        margin-bottom: $margin-xs;
+    }
+
+    &__title {
+        color: inherit;
+        font-family: $ff-b;
+    }
+}

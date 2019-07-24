@@ -1,0 +1,29 @@
+.social {
+    position: fixed;
+    top: 50%;
+    left: calc(var(--icon-size) * 0.25);
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &__link {
+        display: block;
+        text-align: center;
+        cursor: pointer;
+
+        height: var(--icon-size);
+        width: var(--icon-size);
+        line-height: var(--icon-size);
+        font-size: calc(var(--icon-size) * 0.5);
+        border-radius: 50%;
+        margin: $margin-sm 0;
+        background: var(--clr-primary-dark);
+        color: var(--clr-green);
+        box-shadow: 0 0 4px var(--clr-primary-light);
+        transition: all ease-in-out 300ms;
+
+        &:hover,
+        &:focus {
+            background: var(--clr-primary-dark-2);
+        }
+    }
+}
