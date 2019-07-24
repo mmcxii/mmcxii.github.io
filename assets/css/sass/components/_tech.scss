@@ -1,10 +1,9 @@
 .tech {
     &__items {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto, auto-fill);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
-        padding: $margin-sm;
         padding-left: 0;
     }
 
@@ -15,11 +14,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: $margin-sm;
-
-        &:nth-child(odd):last-child {
-            grid-column: 1 / span 2;
-        }
+        margin: $margin-md;
 
         &.vscode {
             color: #23a9f2;
@@ -33,12 +28,12 @@
             color: #fff;
         }
 
-        &.webpack {
-            color: #1c78c0;
-        }
-
         &.nodejs {
             color: #689f63;
+        }
+
+        &.webpack {
+            color: #1c78c0;
         }
 
         &.mongodb {
@@ -64,7 +59,7 @@
     }
 
     &__icon {
-        font-size: $icon-size;
+        font-size: var(--icon-size);
         margin-bottom: $margin-xs;
     }
 

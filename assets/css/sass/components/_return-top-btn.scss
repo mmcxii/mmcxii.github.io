@@ -1,17 +1,16 @@
 .return-top-btn {
     position: fixed;
     bottom: $margin-sm;
-    left: $container-margin * 0.4;
+    left: calc(var(--icon-size) * 0.25);
 
     background: var(--clr-primary-dark);
     color: var(--clr-orange);
 
-    $_size: $fs-b * 2;
-
     text-align: center;
-    height: $_size;
-    width: $_size;
-    line-height: $_size;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    line-height: var(--icon-size);
+    font-size: calc(var(--icon-size) * 0.5);
     padding: 0;
     border-radius: 50%;
     cursor: pointer;

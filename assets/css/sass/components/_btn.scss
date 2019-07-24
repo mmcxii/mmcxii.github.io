@@ -3,6 +3,25 @@
     color: var(--clr-blue);
     background: var(--clr-primary-dark);
     border: 2px solid var(--clr-primary-light);
-    padding: $margin-sm $margin-md;
+    padding: $margin-sm 0;
     border-radius: $rounded;
+    max-height: 54px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        transition: ease-in-out 300ms;
+        background: var(--clr-primary-dark-2);
+    }
+
+    &--trans {
+        border: none;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: initial;
+        }
+    }
 }

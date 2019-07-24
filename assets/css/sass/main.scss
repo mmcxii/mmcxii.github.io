@@ -1,7 +1,10 @@
-// Abstract
+/* Abstract */
 @import 'abstract/functions';
 @import 'abstract/mixins';
 @import 'abstract/variables';
+
+/* Vendor */
+@import 'vendor/sr-only';
 
 /* Base */
 @import 'base/reset';
