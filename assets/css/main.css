@@ -534,7 +534,7 @@ body {
   transform-origin: center;
   content: '';
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: var(--clr-blue);
   position: absolute;
   bottom: 0;
