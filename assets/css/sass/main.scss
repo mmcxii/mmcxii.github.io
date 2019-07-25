@@ -13,6 +13,7 @@
 /* Layout */
 @import 'layout/grid';
 @import 'layout/header';
+@import 'layout/nav';
 @import 'layout/hero';
 @import 'layout/main-content';
 @import 'layout/footer';
@@ -21,7 +22,6 @@
 
 /* Components */
 @import 'components/logo';
-@import 'components/nav';
 @import 'components/social';
 @import 'components/intro';
 @import 'components/tech';

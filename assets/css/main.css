@@ -196,6 +196,69 @@ body {
   }
 }
 
+.nav {
+  grid-area: nav;
+  font-size: 1.2rem;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav__item {
+  list-style: none;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
+.nav__item:not(:last-child) {
+  border-right: 2px solid var(--clr-primary-light);
+}
+
+@media only screen and (min-width: 576px) {
+  .nav__item {
+    padding: 0 1rem;
+  }
+}
+
+.nav__icon {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .nav__icon {
+    display: inline;
+  }
+}
+
+.nav__link-text {
+  position: relative;
+}
+
+.nav__link-text:hover, .nav__link-text:focus {
+  outline: none;
+}
+
+.nav__link-text:hover::after, .nav__link-text:focus::after {
+  transform: scaleX(1);
+}
+
+.nav__link-text::after {
+  transform-origin: center;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--clr-primary-light);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  transition: all ease-in-out 200ms;
+  transform: scaleX(0);
+}
+
 .hero {
   grid-area: hero;
   background: url(../img/hero.png), no-repeat;
@@ -304,69 +367,6 @@ body {
   content: '>';
   color: var(--clr-primary-light);
   margin-left: 1rem;
-}
-
-.nav {
-  grid-area: nav;
-  font-size: 1.2rem;
-}
-
-.nav__list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.nav__item {
-  list-style: none;
-  text-align: center;
-  padding: 0 0.5rem;
-}
-
-.nav__item:not(:last-child) {
-  border-right: 2px solid var(--clr-primary-light);
-}
-
-@media only screen and (min-width: 576px) {
-  .nav__item {
-    padding: 0 1rem;
-  }
-}
-
-.nav__icon {
-  display: none;
-}
-
-@media only screen and (min-width: 576px) {
-  .nav__icon {
-    display: inline;
-  }
-}
-
-.nav__link-text {
-  position: relative;
-}
-
-.nav__link-text:hover, .nav__link-text:focus {
-  outline: none;
-}
-
-.nav__link-text:hover::after, .nav__link-text:focus::after {
-  transform: scaleX(1);
-}
-
-.nav__link-text::after {
-  transform-origin: center;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: var(--clr-primary-light);
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  transition: all ease-in-out 200ms;
-  transform: scaleX(0);
 }
 
 .social {
