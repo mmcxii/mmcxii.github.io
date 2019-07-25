@@ -56,11 +56,11 @@
                     Hello! My name is Nich Secord, I am a front-end leaning full stack web developer and
                     designer (entering the workforce no later than November 2019) based in the Seattle,
                     Washigton area. I enjoy creating beautiful and responsive layouts that look great on any
-                    screen size large, small, and every size in between. I am a proponent of using semantic
-                    HTML in tandem with CSS Grid and Flexbox to create accesible sites for those that are
-                    incapable of viewing the page as well. I am firm in this belief because as stewards of the
-                    front-end it is fundamental to our job to ensure that the internet be easy to use for
-                    everyone, regardless of ability.
+                    screen large, small, and every size in between. I am a proponent of using semantic HTML in
+                    tandem with CSS Grid and Flexbox to create accesible sites for those that are incapable of
+                    viewing the page as well. I am firm in this belief because as stewards of the front-end it
+                    is fundamental to our job to ensure that the internet be easy to use for everyone,
+                    regardless of ability.
                 </p>
                 <p class="section__intro">
                     When away from the office I love spending time outdoors and/ or with friends. I am always
@@ -152,7 +152,7 @@
                                 Let's Taco Bout It
                             </a>
                         </h3>
-                        <div class="portfolio__description">
+                        <div class="portfolio__description slide-in from--right">
                             <div class="portfolio__stack">
                                 <i class="portfolio__icon html fab fa-html5"></i>
                                 <i class="portfolio__icon sass fab fa-sass"></i>
@@ -186,9 +186,9 @@
                             </p>
                         </div>
                         <img
-                            src="./assets/img/screenshots/lets-taco-bout-it.png"
+                            data-src="./assets/img/screenshots/lets-taco-bout-it.png"
                             alt="A screenshot of the 'Let's Taco 'Bout It' website"
-                            class="portfolio__thumbnail"
+                            class="portfolio__thumbnail slide-in from--left"
                         />
                         <a
                             href="https://github.com/mmcxii/lets-taco-bout-it"
@@ -210,7 +210,7 @@
                                 RPS: The Gathering
                             </a>
                         </h3>
-                        <div class="portfolio__description">
+                        <div class="portfolio__description slide-in from--left">
                             <div class="portfolio__stack">
                                 <i class="portfolio__icon html fab fa-html5"></i>
                                 <i class="portfolio__icon sass fab fa-sass"></i>
@@ -238,9 +238,9 @@
                             </p>
                         </div>
                         <img
-                            src="./assets/img/screenshots/roshambo-the-gathering.png"
+                            data-src="./assets/img/screenshots/roshambo-the-gathering.png"
                             alt="A screenshot of the 'Ro Sham Bo: The Gathering' website"
-                            class="portfolio__thumbnail"
+                            class="portfolio__thumbnail slide-in from--right"
                         />
                         <a
                             href="https://github.com/mmcxii/rps-multiplayer"
@@ -262,7 +262,7 @@
                                 Gifs for Casey
                             </a>
                         </h3>
-                        <div class="portfolio__description">
+                        <div class="portfolio__description slide-in from--right">
                             <div class="portfolio__stack">
                                 <i class="portfolio__icon html fab fa-html5"></i>
                                 <i class="portfolio__icon sass fab fa-sass"></i>
@@ -294,9 +294,9 @@
                             </p>
                         </div>
                         <img
-                            src="./assets/img/screenshots/gifs-of-things-casey-likes.png"
+                            data-src="./assets/img/screenshots/gifs-of-things-casey-likes.png"
                             alt="A screenshot of the 'Gifs of Things Casey Likes' website"
-                            class="portfolio__thumbnail"
+                            class="portfolio__thumbnail slide-in from--left"
                         />
                         <a
                             href="https://github.com/mmcxii/gif-tastic"
@@ -376,6 +376,7 @@
 
         <!-- Front End Js -->
         <script src="assets/js/utils/SmoothScroll.js"></script>
-        <script src="assets/js/utils/ShowReturnTopBtn.js"></script>
+        <script src="assets/js/utils/Observers.js"></script>
+        <script src="assets/js/utils/LazyLoad.js"></script>
     </body>
 </html>

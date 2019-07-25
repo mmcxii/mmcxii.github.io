@@ -34,12 +34,10 @@
             &:nth-child(even) {
                 .portfolio__description {
                     grid-column: 1 / 2;
-                    grid-row: 2 / 3;
                 }
 
                 .portfolio__thumbnail {
                     grid-column: 2 / 4;
-                    grid-row: 2 / 3;
                 }
             }
         }
@@ -117,6 +115,28 @@
         }
     }
 
+    &__thumbnail {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+
+        width: 100%;
+        border-radius: $rounded;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin: auto;
+
+        display: grid;
+        grid-template-rows: 1fr auto 5%;
+        grid-template-columns: 1fr;
+
+        @include mq(lg) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+
+            max-height: 500px;
+            max-width: 500px;
+        }
+    }
+
     &__stack {
         display: flex;
         justify-content: space-evenly;
@@ -126,6 +146,7 @@
     &__icon {
         @extend .tech__icon;
         transition: 250ms ease-in-out;
+        filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
 
         &.html {
             &:hover {
@@ -173,28 +194,6 @@
             &:hover {
                 color: #00ff99;
             }
-        }
-    }
-
-    &__thumbnail {
-        grid-column: 1 / 4;
-        grid-row: 2 / 3;
-
-        width: 100%;
-        border-radius: $rounded;
-        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        margin: auto;
-
-        display: grid;
-        grid-template-rows: 1fr auto 5%;
-        grid-template-columns: 1fr;
-
-        @include mq(lg) {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-
-            max-height: 500px;
-            max-width: 500px;
         }
     }
 }
