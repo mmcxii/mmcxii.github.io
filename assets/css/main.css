@@ -1,6 +1,6 @@
 @charset "UTF-8";
-/*=============================
-    //* Table of Contents
+/*==============================
+    Table of Contents
 
     0: Abstract
         0.1: Variables
@@ -35,10 +35,10 @@
     5: Utility
         5.1: Sliders
 
-=============================*/
-/*=================
-    0: Abstract
-=================*/
+==============================*/
+/*==============================
+        0: Abstract
+==============================*/
 /* 0.1: Variables */
 @import url("https://fonts.googleapis.com/css?family=Satisfy|Ubuntu+Mono&display=swap");
 :root {
@@ -77,9 +77,9 @@
   }
 }
 
-/*===============
-    1: Vendor
-===============*/
+/*=============================
+        1: Vendor
+==============================*/
 /* 1.1: Screen Reader Only */
 /*
 	Improved screen reader only CSS class
@@ -147,9 +147,9 @@
   white-space: normal !important;
 }
 
-/*=============
-    2: Base
-=============*/
+/*=============================
+        2: Base
+==============================*/
 /* 2.1: Reset */
 *,
 *::before,
@@ -195,9 +195,9 @@ a {
   color: inherit;
 }
 
-/*===============
-    3: Layout
-===============*/
+/*=============================
+        3: Layout
+==============================*/
 /* 3.1: Grid */
 body {
   min-height: 100vh;
@@ -397,9 +397,9 @@ body {
   border-radius: 10px;
 }
 
-/*===================
-    4: Components
-===================*/
+/*=============================
+        4: Components
+==============================*/
 /* 4.1: Logo */
 .logo--main {
   grid-area: logo;
@@ -888,9 +888,9 @@ body {
   left: calc(var(--icon-size) * 0.25);
 }
 
-/*================
-    5: Utility
-================*/
+/*=============================
+        5: Utility
+==============================*/
 /* 5.1 Sliders */
 .from--left, .from--right {
   transition: opacity 250ms ease-in, transform 500ms ease-in;

@@ -1,5 +1,5 @@
-/*=============================
-    //* Table of Contents
+/*==============================
+    Table of Contents
 
     0: Abstract
         0.1: Variables
@@ -34,27 +34,27 @@
     5: Utility
         5.1: Sliders
 
-=============================*/
+==============================*/
 
-/*=================
-    0: Abstract
-=================*/
+/*==============================
+        0: Abstract
+==============================*/
 @import 'abstract/functions';
 @import 'abstract/mixins';
 
 /* 0.1: Variables */
 @import 'abstract/variables';
 
-/*===============
-    1: Vendor
-===============*/
+/*=============================
+        1: Vendor
+==============================*/
 
 /* 1.1: Screen Reader Only */
 @import 'vendor/sr-only';
 
-/*=============
-    2: Base
-=============*/
+/*=============================
+        2: Base
+==============================*/
 
 /* 2.1: Reset */
 @import 'base/reset';
@@ -62,9 +62,9 @@
 /* 2.2: Typography */
 @import 'base/typography';
 
-/*===============
-    3: Layout
-===============*/
+/*=============================
+        3: Layout
+==============================*/
 
 /* 3.1: Grid */
 @import 'layout/grid';
@@ -90,9 +90,9 @@
 /* 3.8: Scrollbar */
 @import 'layout/scrollbar';
 
-/*===================
-    4: Components
-===================*/
+/*=============================
+        4: Components
+==============================*/
 
 /* 4.1: Logo */
 @import 'components/logo';
@@ -118,8 +118,9 @@
 /* 4.6.1: Return Top Button */
 @import 'components/return-top-btn';
 
-/*================
-    5: Utility
-================*/
+/*=============================
+        5: Utility
+==============================*/
+
 /* 5.1 Sliders */
 @import 'utility/sliders';
