@@ -1,5 +1,45 @@
 @charset "UTF-8";
-/* Abstract */
+/*=============================
+    //* Table of Contents
+
+    0: Abstract
+        0.1: Variables
+
+    1: Vendor
+        1.1: Screen Reader Only
+
+    2: Base
+        2.1: Reset
+        2.2: Typography
+
+    3: Layout
+        3.1: Grid
+        3.2: Header
+        3.3: Nav
+        3.4: Hero
+        3.5: Main Content
+        3.6: Footer
+        3.7: Sections
+        3.8: Scrollbar
+
+    4: Components
+        4.1: Logo
+        4.2: Social
+        4.3: Intro
+        4.3.1: Tech
+        4.4: Portfolio
+        4.5: Contact
+        4.6: Buttons
+        4.6.1: Return Top Button
+
+    5: Utility
+        5.1: Sliders
+
+=============================*/
+/*=================
+    0: Abstract
+=================*/
+/* 0.1: Variables */
 @import url("https://fonts.googleapis.com/css?family=Satisfy|Ubuntu+Mono&display=swap");
 :root {
   --clr-primary-dark: #171a27;
@@ -37,7 +77,10 @@
   }
 }
 
-/* Vendor */
+/*===============
+    1: Vendor
+===============*/
+/* 1.1: Screen Reader Only */
 /*
 	Improved screen reader only CSS class
 	@author Gaël Poupard
@@ -104,7 +147,10 @@
   white-space: normal !important;
 }
 
-/* Base */
+/*=============
+    2: Base
+=============*/
+/* 2.1: Reset */
 *,
 *::before,
 *::after {
@@ -117,6 +163,7 @@ body {
   overflow-x: hidden;
 }
 
+/* 2.2: Typography */
 body {
   font-size: 1.1rem;
   font-family: "Ubuntu Mono", monospace;
@@ -148,7 +195,10 @@ a {
   color: inherit;
 }
 
-/* Layout */
+/*===============
+    3: Layout
+===============*/
+/* 3.1: Grid */
 body {
   min-height: 100vh;
   display: grid;
@@ -158,6 +208,7 @@ body {
   grid-template-areas: 'header header' 'hero hero' 'main-content main-content' 'footer footer';
 }
 
+/* 3.2: Header */
 .header {
   grid-area: header;
   width: 100%;
@@ -186,6 +237,7 @@ body {
   }
 }
 
+/* 3.3: Nav */
 .nav {
   grid-area: nav;
   font-size: 1.2rem;
@@ -249,6 +301,7 @@ body {
   transform: scaleX(0);
 }
 
+/* 3.4: Hero */
 .hero {
   grid-area: hero;
   background: url(../img/hero.png), no-repeat;
@@ -278,6 +331,7 @@ body {
   z-index: 1;
 }
 
+/* 3.5: Main Content */
 .main-content {
   grid-area: main-content;
   display: grid;
@@ -287,6 +341,7 @@ body {
   grid-template-areas: 'intro' 'portfolio' 'contact';
 }
 
+/* 3.6: Footer */
 .footer {
   grid-area: footer;
   background: var(--clr-primary-dark-2);
@@ -295,6 +350,7 @@ body {
   padding: 2rem 0;
 }
 
+/* 3.7: Sections */
 .section {
   padding: 1rem var(--container-margin) 1rem calc(var(--container-margin) + var(--icon-size));
   background: var(--clr-primary-dark);
@@ -326,6 +382,7 @@ body {
   margin-bottom: 1rem;
 }
 
+/* 3.8: Scrollbar */
 ::-webkit-scrollbar {
   width: auto;
 }
@@ -340,7 +397,10 @@ body {
   border-radius: 10px;
 }
 
-/* Components */
+/*===================
+    4: Components
+===================*/
+/* 4.1: Logo */
 .logo--main {
   grid-area: logo;
   margin: 0 auto;
@@ -359,6 +419,7 @@ body {
   margin-left: 1rem;
 }
 
+/* 4.2: Social */
 .social {
   position: fixed;
   top: 50%;
@@ -387,10 +448,12 @@ body {
   background: var(--clr-primary-dark-2);
 }
 
+/* 4.3: Intro */
 .intro {
   grid-area: intro;
 }
 
+/* 4.3.1: Tech */
 .tech__items {
   display: flex;
   flex-wrap: wrap;
@@ -468,6 +531,7 @@ body {
   font-family: "Ubuntu Mono", monospace;
 }
 
+/* 4.4: Portfolio */
 .portfolio {
   grid-area: portfolio;
 }
@@ -649,6 +713,7 @@ body {
   color: #00ff99;
 }
 
+/* 4.5: Contact */
 .contact {
   grid-area: contact;
 }
@@ -767,6 +832,7 @@ body {
   content: ':';
 }
 
+/* 4.6: Buttons */
 .btn {
   font-weight: bolder;
   color: var(--clr-blue);
@@ -794,6 +860,7 @@ body {
   cursor: initial;
 }
 
+/* 4.6.1: Return Top Button */
 .return-top-btn {
   position: fixed;
   bottom: 1rem;
@@ -821,7 +888,10 @@ body {
   left: calc(var(--icon-size) * 0.25);
 }
 
-/* Utility */
+/*================
+    5: Utility
+================*/
+/* 5.1 Sliders */
 .from--left, .from--right {
   transition: opacity 250ms ease-in, transform 500ms ease-in;
   opacity: 0;

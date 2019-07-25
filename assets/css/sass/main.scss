@@ -1,34 +1,125 @@
-/* Abstract */
+/*=============================
+    //* Table of Contents
+
+    0: Abstract
+        0.1: Variables
+
+    1: Vendor
+        1.1: Screen Reader Only
+
+    2: Base
+        2.1: Reset
+        2.2: Typography
+
+    3: Layout
+        3.1: Grid
+        3.2: Header
+        3.3: Nav
+        3.4: Hero
+        3.5: Main Content
+        3.6: Footer
+        3.7: Sections
+        3.8: Scrollbar
+
+    4: Components
+        4.1: Logo
+        4.2: Social
+        4.3: Intro
+        4.3.1: Tech
+        4.4: Portfolio
+        4.5: Contact
+        4.6: Buttons
+        4.6.1: Return Top Button
+
+    5: Utility
+        5.1: Sliders
+
+=============================*/
+
+/*=================
+    0: Abstract
+=================*/
 @import 'abstract/functions';
 @import 'abstract/mixins';
+
+/* 0.1: Variables */
 @import 'abstract/variables';
 
-/* Vendor */
+/*===============
+    1: Vendor
+===============*/
+
+/* 1.1: Screen Reader Only */
 @import 'vendor/sr-only';
 
-/* Base */
+/*=============
+    2: Base
+=============*/
+
+/* 2.1: Reset */
 @import 'base/reset';
+
+/* 2.2: Typography */
 @import 'base/typography';
 
-/* Layout */
+/*===============
+    3: Layout
+===============*/
+
+/* 3.1: Grid */
 @import 'layout/grid';
+
+/* 3.2: Header */
 @import 'layout/header';
+
+/* 3.3: Nav */
 @import 'layout/nav';
+
+/* 3.4: Hero */
 @import 'layout/hero';
+
+/* 3.5: Main Content */
 @import 'layout/main-content';
+
+/* 3.6: Footer */
 @import 'layout/footer';
+
+/* 3.7: Sections */
 @import 'layout/section';
+
+/* 3.8: Scrollbar */
 @import 'layout/scrollbar';
 
-/* Components */
+/*===================
+    4: Components
+===================*/
+
+/* 4.1: Logo */
 @import 'components/logo';
+
+/* 4.2: Social */
 @import 'components/social';
+
+/* 4.3: Intro */
 @import 'components/intro';
+
+/* 4.3.1: Tech */
 @import 'components/tech';
+
+/* 4.4: Portfolio */
 @import 'components/portfolio';
+
+/* 4.5: Contact */
 @import 'components/contact';
+
+/* 4.6: Buttons */
 @import 'components/btn';
+
+/* 4.6.1: Return Top Button */
 @import 'components/return-top-btn';
 
-/* Utility */
+/*================
+    5: Utility
+================*/
+/* 5.1 Sliders */
 @import 'utility/sliders';
