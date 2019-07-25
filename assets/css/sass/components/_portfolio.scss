@@ -123,6 +123,59 @@
         color: inherit;
     }
 
+    &__icon {
+        @extend .tech__icon;
+        transition: 250ms ease-in-out;
+
+        &.html {
+            &:hover {
+                color: #e44d26;
+            }
+        }
+
+        &.sass {
+            &:hover {
+                color: #cd669a;
+            }
+        }
+
+        &.js {
+            &:hover {
+                color: #f0db4f;
+            }
+        }
+
+        &.git {
+            &:hover {
+                color: #f05033;
+            }
+        }
+
+        &.tacofancy {
+            &:hover {
+                color: #f57c00;
+            }
+        }
+
+        &.yelp {
+            &:hover {
+                color: #d32323;
+            }
+        }
+
+        &.firebase {
+            &:hover {
+                color: #fea611;
+            }
+        }
+
+        &.gify {
+            &:hover {
+                color: #00ff99;
+            }
+        }
+    }
+
     &__thumbnail {
         grid-column: 1 / 4;
         grid-row: 2 / 3;

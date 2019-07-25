@@ -114,7 +114,7 @@
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: "Ubuntu Mono", monospace;
 }
 
@@ -124,7 +124,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 1.925rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.1rem;
 }
 
 a {
@@ -211,7 +223,6 @@ body {
   margin: auto;
   text-align: center;
   z-index: 1;
-  font-size: 1.625rem;
 }
 
 .main-content {
@@ -262,6 +273,20 @@ body {
   margin-bottom: 1rem;
 }
 
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-primary-dark);
+  border: 1px solid var(--clr-primary-dark-2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-blue);
+  border-radius: 10px;
+}
+
 /* Components */
 .logo--main {
   grid-area: logo;
@@ -283,7 +308,7 @@ body {
 
 .nav {
   grid-area: nav;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .nav__list {
@@ -443,7 +468,7 @@ body {
   position: absolute;
 }
 
-.tech__icon {
+.tech__icon, .portfolio__icon {
   font-size: var(--icon-size);
   margin-bottom: 0.5rem;
 }
@@ -575,6 +600,42 @@ body {
   display: flex;
   justify-content: space-evenly;
   color: inherit;
+}
+
+.portfolio__icon {
+  transition: 250ms ease-in-out;
+}
+
+.portfolio__icon.html:hover {
+  color: #e44d26;
+}
+
+.portfolio__icon.sass:hover {
+  color: #cd669a;
+}
+
+.portfolio__icon.js:hover {
+  color: #f0db4f;
+}
+
+.portfolio__icon.git:hover {
+  color: #f05033;
+}
+
+.portfolio__icon.tacofancy:hover {
+  color: #f57c00;
+}
+
+.portfolio__icon.yelp:hover {
+  color: #d32323;
+}
+
+.portfolio__icon.firebase:hover {
+  color: #fea611;
+}
+
+.portfolio__icon.gify:hover {
+  color: #00ff99;
 }
 
 .portfolio__thumbnail {
