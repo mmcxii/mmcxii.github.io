@@ -19,9 +19,9 @@ $margin-xl: $margin-lg * 2;
 
 // Style
 $rounded: 10px;
-$fs-b: 1rem;
-$fs-nav: 1.1rem;
-$fs-h1: 2.5rem;
+$fs-b: 1.1rem;
+$fs-nav: 1.2rem;
+$fs-h1: $fs-b * 2.5;
 
 :root {
     // Colors

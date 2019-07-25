@@ -16,6 +16,18 @@ h1 {
     font-size: $fs-h1;
 }
 
+h2 {
+    font-size: $fs-h1 * 0.7;
+}
+
+h3 {
+    font-size: $fs-h1 * 0.5;
+}
+
+h4 {
+    font-size: $fs-h1 * 0.4;
+}
+
 a {
     text-decoration: none;
     color: inherit;
