@@ -1,0 +1,45 @@
+.card {
+    background: var(--clr-primary-dark-2);
+    border-radius: $rounded;
+    position: relative;
+
+    &__banner {
+        background: var(--clr-primary-dark);
+        padding: $margin-sm;
+        border-radius: $rounded;
+    }
+
+    &__title {
+        font-size: $fs-h1 * 0.7;
+        display: inline;
+    }
+
+    &__text {
+        margin: $margin-sm;
+    }
+
+    &__list {
+        margin: $margin-md;
+        column-count: 1;
+        column-fill: balance;
+
+        @include mq(sm) {
+            column-count: 2;
+        }
+    }
+
+    &__btn {
+        &--close {
+            position: absolute;
+            top: $margin-sm;
+            right: $margin-sm;
+            font-size: $fs-h1 * 0.7;
+            transition: all 300ms ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: var(--clr-accent);
+            }
+        }
+    }
+}

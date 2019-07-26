@@ -28,11 +28,15 @@
         4.3.1: Tech
         4.4: Portfolio
         4.5: Contact
-        4.6: Buttons
-        4.6.1: Return Top Button
+        4.6: Card
+        4.7: Modal
+        4.8: Buttons
+        4.8.1: Return Top Button
 
     5: Utility
         5.1: Sliders
+        5.2: Lazy Loaded Images
+        5.3: Hide
 
 ==============================*/
 
@@ -112,15 +116,27 @@
 /* 4.5: Contact */
 @import 'components/contact';
 
-/* 4.6: Buttons */
+/* 4.6: Card */
+@import 'components/card';
+
+/* 4.7: Modal */
+@import 'components/modal';
+
+/* 4.8: Buttons */
 @import 'components/btn';
 
-/* 4.6.1: Return Top Button */
+/* 4.8.1: Return Top Button */
 @import 'components/return-top-btn';
 
 /*=============================
         5: Utility
 ==============================*/
 
-/* 5.1 Sliders */
+/* 5.1: Sliders */
 @import 'utility/sliders';
+
+/* 5.2: Lazy Loaded Images */
+@import 'utility/data-src';
+
+/* 5.3: Hide */
+@import 'utility/hide';

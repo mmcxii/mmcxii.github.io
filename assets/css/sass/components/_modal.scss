@@ -1,0 +1,80 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 300ms;
+
+    .card {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 5px 5px 5px -3px var(--clr-accent);
+        width: 90%;
+        color: var(--clr-primary-light);
+
+        @include mq(sm) {
+            width: 80%;
+        }
+
+        @include mq(md) {
+            width: 70%;
+        }
+
+        @include mq(lg) {
+            width: 60%;
+        }
+
+        @include mq(xl) {
+            width: 50%;
+
+            max-width: 650px;
+        }
+
+        &__title {
+            color: var(--clr-accent);
+        }
+
+        .tech__icon {
+            color: var(--clr-accent);
+            margin-right: $margin-sm;
+            margin-bottom: 0;
+        }
+    }
+
+    &.vscode {
+        --clr-accent: #23a9f2;
+    }
+
+    &.sass {
+        --clr-accent: #cd669a;
+    }
+
+    &.js {
+        --clr-accent: #f0db4f;
+    }
+
+    &.git {
+        --clr-accent: #f05033;
+    }
+
+    &.nodejs {
+        --clr-accent: #689f63;
+    }
+
+    &.webpack {
+        --clr-accent: #1c78c0;
+    }
+
+    &.mongodb {
+        --clr-accent: #599736;
+    }
+
+    &.react {
+        --clr-accent: #61dafb;
+    }
+}

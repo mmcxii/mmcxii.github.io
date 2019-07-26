@@ -29,11 +29,15 @@
         4.3.1: Tech
         4.4: Portfolio
         4.5: Contact
-        4.6: Buttons
-        4.6.1: Return Top Button
+        4.6: Card
+        4.7: Modal
+        4.8: Buttons
+        4.8.1: Return Top Button
 
     5: Utility
         5.1: Sliders
+        5.2: Lazy Loaded Images
+        5.3: Hide
 
 ==============================*/
 /*==============================
@@ -195,6 +199,31 @@ a {
   color: inherit;
 }
 
+.styled-link, .nav__link-text {
+  position: relative;
+}
+
+.styled-link:hover, .nav__link-text:hover, .styled-link:focus, .nav__link-text:focus {
+  outline: none;
+}
+
+.styled-link:hover::after, .nav__link-text:hover::after, .styled-link:focus::after, .nav__link-text:focus::after {
+  transform: scaleX(1);
+}
+
+.styled-link::after, .nav__link-text::after {
+  transform-origin: center;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-primary-light);
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: all ease-in-out 200ms;
+  transform: scaleX(0);
+}
+
 /*=============================
         3: Layout
 ==============================*/
@@ -276,31 +305,6 @@ body {
   }
 }
 
-.nav__link-text {
-  position: relative;
-}
-
-.nav__link-text:hover, .nav__link-text:focus {
-  outline: none;
-}
-
-.nav__link-text:hover::after, .nav__link-text:focus::after {
-  transform: scaleX(1);
-}
-
-.nav__link-text::after {
-  transform-origin: center;
-  content: '';
-  width: 100%;
-  height: 1px;
-  background-color: var(--clr-primary-light);
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  transition: all ease-in-out 200ms;
-  transform: scaleX(0);
-}
-
 /* 3.4: Hero */
 .hero {
   grid-area: hero;
@@ -319,7 +323,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
 }
 
@@ -524,11 +528,13 @@ body {
 .tech__icon, .portfolio__icon {
   font-size: var(--icon-size);
   margin-bottom: 0.5rem;
+  pointer-events: none;
 }
 
 .tech__title {
   color: inherit;
   font-family: "Ubuntu Mono", monospace;
+  pointer-events: none;
 }
 
 /* 4.4: Portfolio */
@@ -581,6 +587,7 @@ body {
   grid-row: 1 / 2;
   margin-bottom: 0.5rem;
   width: 100%;
+  font-size: 1.65rem;
 }
 
 .portfolio__title::before {
@@ -832,7 +839,142 @@ body {
   content: ':';
 }
 
-/* 4.6: Buttons */
+/* 4.6: Card */
+.card {
+  background: var(--clr-primary-dark-2);
+  border-radius: 10px;
+  position: relative;
+}
+
+.card__banner {
+  background: var(--clr-primary-dark);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.card__title {
+  font-size: 1.925rem;
+  display: inline;
+}
+
+.card__text {
+  margin: 1rem;
+}
+
+.card__list {
+  margin: 2rem;
+  column-count: 1;
+  column-fill: balance;
+}
+
+@media only screen and (min-width: 576px) {
+  .card__list {
+    column-count: 2;
+  }
+}
+
+.card__btn--close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.925rem;
+  transition: all 300ms ease-in-out;
+}
+
+.card__btn--close:hover, .card__btn--close:focus {
+  color: var(--clr-accent);
+}
+
+/* 4.7: Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  transition: ease-in-out 300ms;
+}
+
+.modal .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 5px -3px var(--clr-accent);
+  width: 90%;
+  color: var(--clr-primary-light);
+}
+
+@media only screen and (min-width: 576px) {
+  .modal .card {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal .card {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .modal .card {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .modal .card {
+    width: 50%;
+    max-width: 650px;
+  }
+}
+
+.modal .card__title {
+  color: var(--clr-accent);
+}
+
+.modal .card .tech__icon, .modal .card .portfolio__icon {
+  color: var(--clr-accent);
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
+.modal.vscode {
+  --clr-accent: #23a9f2;
+}
+
+.modal.sass {
+  --clr-accent: #cd669a;
+}
+
+.modal.js {
+  --clr-accent: #f0db4f;
+}
+
+.modal.git {
+  --clr-accent: #f05033;
+}
+
+.modal.nodejs {
+  --clr-accent: #689f63;
+}
+
+.modal.webpack {
+  --clr-accent: #1c78c0;
+}
+
+.modal.mongodb {
+  --clr-accent: #599736;
+}
+
+.modal.react {
+  --clr-accent: #61dafb;
+}
+
+/* 4.8: Buttons */
 .btn {
   font-weight: bolder;
   color: var(--clr-blue);
@@ -860,7 +1002,7 @@ body {
   cursor: initial;
 }
 
-/* 4.6.1: Return Top Button */
+/* 4.8.1: Return Top Button */
 .return-top-btn {
   position: fixed;
   bottom: 1rem;
@@ -891,7 +1033,7 @@ body {
 /*=============================
         5: Utility
 ==============================*/
-/* 5.1 Sliders */
+/* 5.1: Sliders */
 .from--left, .from--right {
   transition: opacity 250ms ease-in, transform 500ms ease-in;
   opacity: 0;
@@ -908,4 +1050,14 @@ body {
 
 .from--right {
   transform: translateX(100%);
+}
+
+/* 5.2: Lazy Loaded Images */
+[data-src] {
+  min-height: 270px;
+}
+
+/* 5.3: Hide */
+.hide {
+  display: none;
 }
