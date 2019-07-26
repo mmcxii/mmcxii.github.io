@@ -16,23 +16,3 @@ const revealBtnObserver = new IntersectionObserver((header) => {
 revealBtnObserver.observe(header);
 
 //* SlideIn Observer
-const sliders = document.querySelectorAll('.slide-in');
-
-const slideInOptions = {
-    rootMargin: '0px 0px -100px 0px',
-};
-
-const slideInObserver = new IntersectionObserver((entries, slideInObserver) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('appear');
-            slideInObserver.unobserve(entry.target);
-        }
-    });
-}, slideInOptions);
-
-sliders.forEach((slider) => {
-    slideInObserver.observe(slider);
-});

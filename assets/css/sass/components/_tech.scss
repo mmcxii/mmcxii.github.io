@@ -70,10 +70,12 @@
     &__icon {
         font-size: var(--icon-size);
         margin-bottom: $margin-xs;
+        pointer-events: none;
     }
 
     &__title {
         color: inherit;
         font-family: $ff-b;
+        pointer-events: none;
     }
 }
