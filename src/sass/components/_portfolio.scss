@@ -49,7 +49,6 @@
 
         margin-bottom: $margin-xs;
         width: 100%;
-        font-size: $fs-h1 * 0.6;
 
         &::before {
             content: '<';
@@ -148,53 +147,5 @@
         @extend .tech__icon;
         transition: 250ms ease-in-out;
         filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
-
-        &.html {
-            &:hover {
-                color: #e44d26;
-            }
-        }
-
-        &.sass {
-            &:hover {
-                color: #cd669a;
-            }
-        }
-
-        &.js {
-            &:hover {
-                color: #f0db4f;
-            }
-        }
-
-        &.git {
-            &:hover {
-                color: #f05033;
-            }
-        }
-
-        &.tacofancy {
-            &:hover {
-                color: #f57c00;
-            }
-        }
-
-        &.yelp {
-            &:hover {
-                color: #d32323;
-            }
-        }
-
-        &.firebase {
-            &:hover {
-                color: #fea611;
-            }
-        }
-
-        &.gify {
-            &:hover {
-                color: #00ff99;
-            }
-        }
     }
 }

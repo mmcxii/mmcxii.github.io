@@ -187,7 +187,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.65rem;
 }
 
 h4 {
@@ -393,7 +393,7 @@ body {
 
 ::-webkit-scrollbar-track {
   background: var(--clr-primary-dark);
-  border: 1px solid var(--clr-primary-dark-2);
+  border-left: 1px solid var(--clr-primary-dark-2);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -587,7 +587,6 @@ body {
   grid-row: 1 / 2;
   margin-bottom: 0.5rem;
   width: 100%;
-  font-size: 1.65rem;
 }
 
 .portfolio__title::before {
@@ -686,38 +685,6 @@ body {
   transition: 250ms ease-in-out;
   -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
           filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
-}
-
-.portfolio__icon.html:hover {
-  color: #e44d26;
-}
-
-.portfolio__icon.sass:hover {
-  color: #cd669a;
-}
-
-.portfolio__icon.js:hover {
-  color: #f0db4f;
-}
-
-.portfolio__icon.git:hover {
-  color: #f05033;
-}
-
-.portfolio__icon.tacofancy:hover {
-  color: #f57c00;
-}
-
-.portfolio__icon.yelp:hover {
-  color: #d32323;
-}
-
-.portfolio__icon.firebase:hover {
-  color: #fea611;
-}
-
-.portfolio__icon.gify:hover {
-  color: #00ff99;
 }
 
 /* 4.5: Contact */
