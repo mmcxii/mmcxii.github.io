@@ -1,108 +1,16 @@
 .contact {
     grid-area: contact;
 
-    &-form {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
+    &__info {
+        list-style: none;
 
-        @include mq(md) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, auto);
-            grid-column-gap: $grid-gap;
+        @include mq(sm) {
+            column-count: 2;
+            column-fill: balance;
         }
+    }
 
-        &__group {
-            margin-bottom: $margin-sm;
-            padding-bottom: $margin-xs;
-            margin-top: auto;
-
-            &:not(:nth-child(3)) {
-                border-bottom: 2px solid var(--clr-primary-light);
-            }
-
-            &.name {
-                grid-row: 1/2;
-
-                @include mq(md) {
-                    grid-column: 1/2;
-                }
-            }
-
-            &.email {
-                grid-row: 2/3;
-
-                @include mq(md) {
-                    grid-column: 1/2;
-                }
-
-                @include mq(lg) {
-                    grid-column: 2/3;
-                    grid-row: 1/2;
-                }
-            }
-
-            &.message {
-                grid-row: 3/4;
-
-                @include mq(md) {
-                    grid-column: 2/3;
-                    grid-row: 1/4;
-                    margin-bottom: 0;
-                    padding-bottom: 0;
-                }
-
-                @include mq(lg) {
-                    grid-column: 1/4;
-                    grid-row: 2/3;
-                    margin-bottom: $margin-sm;
-                }
-            }
-        }
-
-        &__btn {
-            &.submit {
-                grid-row: 4/5;
-                margin-top: auto;
-
-                @include mq(md) {
-                    grid-column: 1/2;
-                    grid-row: 3/4;
-                }
-
-                @include mq(lg) {
-                    grid-column: 1/4;
-                    grid-row: 3/4;
-                }
-            }
-        }
-
-        &__input,
-        &__text,
-        &__btn {
-            width: 100%;
-            border: none;
-            outline: none;
-        }
-
-        &__input,
-        &__text {
-            background: none;
-            color: var(--clr-primary-light);
-            padding: 0 $margin-xs;
-        }
-
-        &__text {
-            border-radius: $rounded;
-            border: 2px solid var(--clr-primary-light);
-            padding: $margin-xs;
-        }
-
-        &__label {
-            &::after {
-                content: ':';
-            }
-        }
+    &__icon {
+        margin: 0 $margin-xs;
     }
 }

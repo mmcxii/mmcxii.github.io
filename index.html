@@ -8,6 +8,8 @@
         <script src="https://kit.fontawesome.com/139d901861.js"></script>
         <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
         <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon" />
     </head>
 
     <body>
@@ -504,34 +506,52 @@
                 <h2 class="section__title">Contact Me</h2>
                 <p class="section__intro">
                     If you like what you've seen so far and want to know more, please contact me using the
-                    form below. I would love to work with you on your next web project!
+                    provided links. I am available for hire and ready to work!
                 </p>
-                <form class="contact-form">
-                    <div class="contact-form__group name">
-                        <label for="name" class="contact-form__label">Your Name</label>
-                        <input class="contact-form__input" type="text" name="name" id="contact-name" />
-                    </div>
-                    <div class="contact-form__group email">
-                        <label for="email" class="contact-form__label">Your Email</label>
-                        <input class="contact-form__input" type="email" name="email" id="contact-email" />
-                    </div>
-                    <div class="contact-form__group message">
-                        <label for="message" class="contact-form__label">Your Message</label>
-                        <textarea
-                            class="contact-form__text"
-                            name="message"
-                            id="contact-message"
-                            cols="30"
-                            rows="15"
-                        ></textarea>
-                    </div>
-                    <button class="btn contact-form__btn submit" type="submit">Send Message</button>
-                </form>
+                <ul class="contact__info">
+                    <li class="contact__item">
+                        Email:
+                        <i class="contact__icon fas fa-envelope"></i>
+                        <a href="mailto:nich@secord.io" class="styled-link" target="new">
+                            nich<code>@</code>secord.io
+                        </a>
+                    </li>
+                    <li class="contact__item">
+                        Resume:
+                        <i class="contact__icon fas fa-file-user"></i>
+                        <a href="./resume/2019-07-25.pdf" class="styled-link" target="new">
+                            Current as of 25 July, 2019
+                        </a>
+                    </li>
+                    <br />
+                    <li class="contact__item">
+                        Github:
+                        <i class="contact__icon fab fa-github"></i>
+                        <a href="https://www.github.com/mmcxii" class="styled-link" target="new">mmcxii</a>
+                    </li>
+                    <li class="contact__item">
+                        LinkedIn:
+                        <i class="contact__icon fab fa-linkedin-in"></i>
+                        <a href="https://www.linkedin.com/in/mmcxii" class="styled-link" target="new">
+                            mmcxii
+                        </a>
+                    </li>
+
+                    <li class="contact__item">
+                        Twitter:
+                        <i class="contact__icon fab fa-twitter"></i>
+                        <a href="https://twitter.com/mmcxii__" class="styled-link" target="new">@mmcxii__</a>
+                    </li>
+                </ul>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="byline">&copy; 2019 Nich Secord. All Rights Reserved.</div>
+            <div class="byline">
+                &copy; 2019 Nich Secord.
+                <br />
+                All Rights Reserved.
+            </div>
         </footer>
 
         <aside class="social">
@@ -542,14 +562,6 @@
             <a href="https://www.linkedin.com/in/mmcxii/" class="social__link" target="blank">
                 <i class="social__icon fab fa-linkedin-in"></i>
                 <span class="sr-only">Linked In</span>
-            </a>
-            <a
-                href="https://stackoverflow.com/users/11168037/nich-secord?tab=profile"
-                class="social__link"
-                target="blank"
-            >
-                <i class="social__icon fab fa-stack-overflow"></i>
-                <span class="sr-only">Stack Overflow</span>
             </a>
             <a href="https://twitter.com/mmcxii__" class="social__link" target="new">
                 <i class="social__icon fab fa-twitter"></i>
