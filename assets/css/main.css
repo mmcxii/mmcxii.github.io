@@ -510,6 +510,10 @@ body {
   color: #599736;
 }
 
+.tech__item.vue {
+  color: #41b883;
+}
+
 .tech__item.react {
   color: #61dafb;
 }
