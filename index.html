@@ -313,13 +313,6 @@
                             </button>
                         </article>
 
-                        <article class="tech__item vue coming-soon">
-                            <button class="tech__btn btn--trans" data-tech="vue" disabled>
-                                <i class="tech__icon fab fa-vuejs"></i>
-                                <h4 class="tech__title">Vue</h4>
-                            </button>
-                        </article>
-
                         <article class="tech__item react coming-soon">
                             <button class="tech__btn btn--trans" data-tech="react" disabled>
                                 <i class="tech__icon fab fa-react"></i>
@@ -344,6 +337,47 @@
                     <article class="portfolio__item">
                         <h3 class="portfolio__title">
                             <a
+                                href="https://www.secord.io/reactulator"
+                                class="portfolio__link"
+                                target="blank"
+                            >
+                                The Reactulator
+                            </a>
+                        </h3>
+                        <div class="portfolio__description">
+                            <div class="portfolio__stack">
+                                <i class="portfolio__icon html fab fa-react"></i>
+                                <i class="portfolio__icon sass fab fa-sass"></i>
+                            </div>
+                            <p class="portfolio__description__p">
+                                This is the first project I made on my own using React. It is a simple
+                                calculator, it works as you would expect. The calculator itself is built using
+                                CSS Grid, and the rest of the page relies on a little bit of Flexbox. I really
+                                enjoyed putting this very simple project together, React's class-based
+                                components feel natural and easy to use, and the fact that using Sass with
+                                React involves no additional hoops to jump through almost makes it feel like
+                                I'm cheating somehow. I look forward to building more complex applications
+                                with these powerful tools.
+                            </p>
+                        </div>
+                        <img
+                            data-src="./assets/img/screenshots/reactulator.png"
+                            alt="A screenshot of The Reactulator"
+                            class="portfolio__thumbnail"
+                        />
+                        <a
+                            href="https://github.com/mmcxii/reactulator"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                            <span class="sr-only">"The Reactulator" Github Repository</span>
+                        </a>
+                    </article>
+
+                    <article class="portfolio__item">
+                        <h3 class="portfolio__title">
+                            <a
                                 href="https://mmcxii.github.io/lets-taco-bout-it/"
                                 class="portfolio__link"
                                 target="blank"
@@ -357,8 +391,6 @@
                                 <i class="portfolio__icon sass fab fa-sass"></i>
                                 <i class="portfolio__icon js fab fa-js-square"></i>
                                 <i class="portfolio__icon git fab fa-git-alt"></i>
-                                <i class="portfolio__icon tacofancy fas fa-taco"></i>
-                                <i class="portfolio__icon yelp fab fa-yelp"></i>
                             </div>
                             <p class="portfolio__description__p">
                                 This was the first group project I participated in during my Boot Camp in
@@ -414,7 +446,6 @@
                                 <i class="portfolio__icon html fab fa-html5"></i>
                                 <i class="portfolio__icon sass fab fa-sass"></i>
                                 <i class="portfolio__icon js fab fa-js-square"></i>
-                                <i class="portfolio__icon git fab fa-git-alt"></i>
                                 <i class="portfolio__icon firebase fas fa-fire"></i>
                             </div>
                             <p class="portfolio__description__p">
@@ -448,62 +479,6 @@
                         >
                             <i class="social__icon fab fa-github"></i>
                             <span class="sr-only">"RPS: The Gathering" Github Repository</span>
-                        </a>
-                    </article>
-
-                    <article class="portfolio__item">
-                        <h3 class="portfolio__title">
-                            <a
-                                href="https://mmcxii.github.io/gif-tastic/"
-                                class="portfolio__link"
-                                target="blank"
-                            >
-                                Gifs for Casey
-                            </a>
-                        </h3>
-                        <div class="portfolio__description">
-                            <div class="portfolio__stack">
-                                <i class="portfolio__icon html fab fa-html5"></i>
-                                <i class="portfolio__icon sass fab fa-sass"></i>
-                                <i class="portfolio__icon js fab fa-js-square"></i>
-                                <i class="portfolio__icon git fab fa-git-alt"></i>
-                                <i class="portfolio__icon gify fas fa-images"></i>
-                            </div>
-                            <p class="portfolio__description__p">
-                                This project was my introduction to working with APIs and making requests to
-                                get data. Over the course of making this page I learned how to make requests,
-                                and set parameters for those requests; for instance in this case I set the
-                                limit on how many gifs I would retrieve and the maximum rating those gifs
-                                would be allowed to be. I then took the retrieved images and displayed a still
-                                on the page, which would then play when it was clicked, and pause when it was
-                                clicked again. There is also a search bar which allows users to search GIFY
-                                for any topic they want and it will prepend ten new gifs to the page based on
-                                their search query.
-                            </p>
-                            <p class="portfolio__description__p">
-                                I began this project using jQuery to make building components, handling event
-                                delegation, and sending AJAX requests easier. However, after completing the
-                                project I went back and replaced all of my jQuery with vanilla Javascript ES6
-                                functions to practice with the newer technology. In just few short hours I was
-                                able to remove jQuery as a dependency.
-                            </p>
-                            <p class="portfolio__description__p">
-                                I dedicated this project to my girlfriend, Casey, and provided the page with
-                                ten default buttons to search GIFY for things that she finds funny.
-                            </p>
-                        </div>
-                        <img
-                            data-src="./assets/img/screenshots/gifs-of-things-casey-likes.png"
-                            alt="A screenshot of the 'Gifs of Things Casey Likes' website"
-                            class="portfolio__thumbnail"
-                        />
-                        <a
-                            href="https://github.com/mmcxii/gif-tastic"
-                            class="portfolio__link--icon"
-                            target="blank"
-                        >
-                            <i class="social__icon fab fa-github"></i>
-                            <span class="sr-only">"Gifs for Casey" Github Repository</span>
                         </a>
                     </article>
                 </section>
