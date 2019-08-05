@@ -3,11 +3,19 @@
 
     &__info {
         list-style: none;
+        display: grid;
 
-        @include mq(sm) {
-            column-count: 2;
-            column-fill: balance;
+        @include mq(md) {
+            grid-auto-flow: column;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: $margin-xs;
         }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 80px repeat(2, max-content);
     }
 
     &__icon {

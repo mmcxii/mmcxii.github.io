@@ -459,82 +459,181 @@ body {
 
 /* 4.3.1: Tech */
 .tech__items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto-fit;
+  grid-row-gap: 1rem;
 }
 
-.tech__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem auto;
-  min-width: 50%;
-  transition: all ease-in-out 300ms;
-}
-
-@media only screen and (min-width: 576px) {
-  .tech__item {
-    min-width: auto;
-    margin: 2rem;
+@media only screen and (min-width: 768px) {
+  .tech__items {
+    grid-template-columns: 1fr;
   }
 }
 
-.tech__item.vscode {
-  color: #23a9f2;
+.tech__item {
+  --clr: var(--clr-primary-light);
+  text-align: center;
+  color: var(--clr);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto-fit;
+  grid-gap: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__item {
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
+.tech__item.html {
+  --clr: #e44d26;
 }
 
 .tech__item.sass {
-  color: #cd669a;
+  --clr: #cd669a;
 }
 
 .tech__item.js {
-  color: #f0db4f;
+  --clr: #f0db4f;
 }
 
 .tech__item.git {
-  color: #f05033;
+  --clr: #f05033;
 }
 
 .tech__item.nodejs {
-  color: #689f63;
+  --clr: #689f63;
 }
 
 .tech__item.webpack {
-  color: #1c78c0;
+  --clr: #1c78c0;
 }
 
 .tech__item.mongodb {
-  color: #599736;
+  --clr: #599736;
 }
 
 .tech__item.react {
-  color: #61dafb;
-}
-
-.tech__item.coming-soon::before {
-  content: 'Coming Soon!';
-  color: white;
-  background: rgba(128, 128, 128, 0.7);
-  border: 2px solid white;
-  padding: 0.5rem;
-  text-align: center;
-  transform: rotate(25deg);
-  position: absolute;
+  --clr: #61dafb;
 }
 
 .tech__icon, .portfolio__icon {
   font-size: var(--icon-size);
-  margin-bottom: 0.5rem;
-  pointer-events: none;
 }
 
 .tech__title {
   color: inherit;
   font-family: "Ubuntu Mono", monospace;
-  pointer-events: none;
+}
+
+.tech__bar {
+  background: var(--clr-primary-dark-2);
+  color: var(--clr-primary-light);
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 40px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar {
+    flex-direction: row;
+    height: 40px;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.tech__bar--completed {
+  background: var(--clr);
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed {
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 0.5rem;
+  }
+}
+
+.tech__bar--completed.html {
+  height: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.html {
+    height: auto;
+    width: 90%;
+  }
+}
+
+.tech__bar--completed.sass {
+  height: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.sass {
+    height: auto;
+    width: 90%;
+  }
+}
+
+.tech__bar--completed.js {
+  height: 80%;
+  color: var(--clr-primary-dark);
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.js {
+    height: auto;
+    width: 80%;
+  }
+}
+
+.tech__bar--completed.git {
+  height: 60%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.git {
+    height: auto;
+    width: 60%;
+  }
+}
+
+.tech__bar--completed.nodejs {
+  height: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.nodejs {
+    height: auto;
+    width: 50%;
+  }
+}
+
+.tech__bar--completed.react {
+  height: 20%;
+  color: var(--clr-primary-dark);
+}
+
+@media only screen and (min-width: 768px) {
+  .tech__bar--completed.react {
+    height: auto;
+    width: 20%;
+  }
 }
 
 /* 4.4: Portfolio */
@@ -694,13 +793,22 @@ body {
 
 .contact__info {
   list-style: none;
+  display: grid;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
   .contact__info {
-    column-count: 2;
-    column-fill: balance;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0.5rem;
   }
+}
+
+.contact__item {
+  display: grid;
+  grid-template-columns: 80px repeat(2, -webkit-max-content);
+  grid-template-columns: 80px repeat(2, max-content);
 }
 
 .contact__icon {

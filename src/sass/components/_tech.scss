@@ -1,81 +1,160 @@
 .tech {
     &__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto-fit;
+        grid-row-gap: $margin-sm;
 
-        padding-left: 0;
+        @include mq(md) {
+            grid-template-columns: 1fr;
+        }
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: $margin-md auto;
-        min-width: 50%;
-        transition: all ease-in-out 300ms;
+        --clr: var(--clr-primary-light);
 
-        @include mq(sm) {
-            min-width: auto;
-            margin: $margin-md;
+        text-align: center;
+        color: var(--clr);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto-fit;
+        grid-gap: $margin-xs;
+
+        @include mq(md) {
+            grid-template-columns: 90px 1fr;
+            grid-template-rows: 1fr;
         }
 
-        &.vscode {
-            color: #23a9f2;
+        &.html {
+            --clr: #e44d26;
         }
 
         &.sass {
-            color: #cd669a;
+            --clr: #cd669a;
         }
 
         &.js {
-            color: #f0db4f;
+            --clr: #f0db4f;
         }
 
         &.git {
-            color: #f05033;
+            --clr: #f05033;
         }
 
         &.nodejs {
-            color: #689f63;
+            --clr: #689f63;
         }
 
         &.webpack {
-            color: #1c78c0;
+            --clr: #1c78c0;
         }
 
         &.mongodb {
-            color: #599736;
+            --clr: #599736;
         }
 
         &.react {
-            color: #61dafb;
-        }
-
-        &.coming-soon {
-            &::before {
-                content: 'Coming Soon!';
-                color: white;
-                background: rgba(128, 128, 128, 0.7);
-                border: 2px solid white;
-                padding: $margin-xs;
-                text-align: center;
-                transform: rotate(25deg);
-                position: absolute;
-            }
+            --clr: #61dafb;
         }
     }
 
     &__icon {
         font-size: var(--icon-size);
-        margin-bottom: $margin-xs;
-        pointer-events: none;
     }
 
     &__title {
         color: inherit;
         font-family: $ff-b;
-        pointer-events: none;
+    }
+
+    &__bar {
+        background: var(--clr-primary-dark-2);
+        color: var(--clr-primary-light);
+        font-weight: bolder;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 40px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: $rounded;
+        overflow: hidden;
+
+        @include mq(md) {
+            flex-direction: row;
+            height: 40px;
+            width: 100%;
+            margin-left: 0;
+        }
+
+        &--completed {
+            background: var(--clr);
+            display: flex;
+            justify-content: center;
+            border-radius: $rounded;
+            padding-top: $margin-xs;
+
+            @include mq(md) {
+                justify-content: flex-end;
+                align-items: center;
+                padding-top: 0;
+                padding-right: $margin-xs;
+            }
+
+            &.html {
+                height: 90%;
+
+                @include mq(md) {
+                    height: auto;
+                    width: 90%;
+                }
+            }
+
+            &.sass {
+                height: 90%;
+
+                @include mq(md) {
+                    height: auto;
+                    width: 90%;
+                }
+            }
+
+            &.js {
+                height: 80%;
+                color: var(--clr-primary-dark);
+
+                @include mq(md) {
+                    height: auto;
+                    width: 80%;
+                }
+            }
+
+            &.git {
+                height: 60%;
+
+                @include mq(md) {
+                    height: auto;
+                    width: 60%;
+                }
+            }
+
+            &.nodejs {
+                height: 50%;
+
+                @include mq(md) {
+                    height: auto;
+                    width: 50%;
+                }
+            }
+
+            &.react {
+                height: 20%;
+                color: var(--clr-primary-dark);
+
+                @include mq(md) {
+                    height: auto;
+                    width: 20%;
+                }
+            }
+        }
     }
 }
