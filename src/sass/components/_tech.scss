@@ -138,21 +138,21 @@
             }
 
             &.nodejs {
-                height: 50%;
+                height: 60%;
 
                 @include mq(md) {
                     height: auto;
-                    width: 50%;
+                    width: 60%;
                 }
             }
 
             &.react {
-                height: 20%;
+                height: 25%;
                 color: var(--clr-primary-dark);
 
                 @include mq(md) {
                     height: auto;
-                    width: 20%;
+                    width: 25%;
                 }
             }
         }
