@@ -130,7 +130,7 @@
                                 <h4 class="tech__title">React</h4>
                             </div>
                             <div class="tech__bar">
-                                <div class="tech__bar--completed react">25%</div>
+                                <div class="tech__bar--completed react">65%</div>
                             </div>
                         </article>
                     </section>
@@ -148,6 +148,65 @@
                 </p>
 
                 <section class="portfolio__items">
+                    <article class="portfolio__item">
+                        <h3 class="portfolio__title">
+                            <a href="https://deckedout.herokuapp.com/" class="portfolio__link" target="blank">
+                                Decked Out
+                            </a>
+                        </h3>
+                        <div class="portfolio__description">
+                            <div class="portfolio__stack">
+                                <i class="portfolio__icon html fab fa-react"></i>
+                                <i class="portfolio__icon sass fab fa-node-js"></i>
+                                <i class="portfolio__icon aws fab fa-aws"></i>
+                                <i class="portfolio__icon git fab fa-git-alt"></i>
+                            </div>
+                            <p class="portfolio__description__p">
+                                Decked Out is the first full scale application I made with a team using modern
+                                web technologies. We used React on the front end, leveraging the
+                                <a
+                                    href="https://www.styled-components.com/"
+                                    class="styled-link"
+                                    style="display: inline-block"
+                                >
+                                    Styled Components
+                                    <i class="far fa-external-link"></i>
+                                </a>
+                                library for CSS in JS, which allows for dynamic and functional styling that I
+                                can pass props to. These purely stylistic components, are then easily called
+                                whenever needed throughout the rest of the site, making the design consistent
+                                to the user and easy to comprehend to the developer.
+                            </p>
+                            <p class="portfolio__description__p">
+                                As I was familiar with React at the start of this project I took it upon
+                                myself to create structure for our application. I created an a library of
+                                elements, utilities, and a few custom Hooks for us to use throughout the site
+                                to ease the burden of new technology on my counterparts, and helped my
+                                teammates learn how to use React on the fly. I also handled the more complex
+                                aspects of our client-side app, such as setting up the React Router.
+                            </p>
+                            <p class="portfolio__description__p">
+                                Although I did not participate on the back-end of this project, my team used
+                                Node and Express to serve our app as well as the API for interacting with our
+                                database. Our data was split between a MySQL database which we interacted with
+                                using Sequelize, and an AWS S3 database.
+                            </p>
+                        </div>
+                        <img
+                            src="./assets/img/screenshots/decked-out.png"
+                            alt="A screenshot of Decked Out"
+                            class="portfolio__thumbnail"
+                        />
+                        <a
+                            href="https://github.com/mmcxii/decked-out"
+                            class="portfolio__link--icon"
+                            target="blank"
+                        >
+                            <i class="social__icon fab fa-github"></i>
+                            <span class="sr-only">"Decked Out" Github Repository</span>
+                        </a>
+                    </article>
+
                     <article class="portfolio__item">
                         <h3 class="portfolio__title">
                             <a
@@ -182,44 +241,7 @@
                             target="blank"
                         >
                             <i class="social__icon fab fa-github"></i>
-                            <span class="sr-only">"The Reactulator" Github Repository</span>
-                        </a>
-                    </article>
-
-                    <article class="portfolio__item">
-                        <h3 class="portfolio__title">
-                            <a href="https://reactulator.netlify.com/" class="portfolio__link" target="blank">
-                                The Reactulator
-                            </a>
-                        </h3>
-                        <div class="portfolio__description">
-                            <div class="portfolio__stack">
-                                <i class="portfolio__icon html fab fa-react"></i>
-                                <i class="portfolio__icon sass fab fa-sass"></i>
-                            </div>
-                            <p class="portfolio__description__p">
-                                This is the first project I made on my own using React. It is a simple
-                                calculator, it works as you would expect. The calculator itself is built using
-                                CSS Grid, and the rest of the page relies on a little bit of Flexbox. I really
-                                enjoyed putting this very simple project together, React's class-based
-                                components feel natural and easy to use, and the fact that using Sass with
-                                React involves no additional hoops to jump through almost makes it feel like
-                                I'm cheating somehow. I look forward to building more complex applications
-                                with these powerful tools.
-                            </p>
-                        </div>
-                        <img
-                            src="./assets/img/screenshots/reactulator.png"
-                            alt="A screenshot of The Reactulator"
-                            class="portfolio__thumbnail"
-                        />
-                        <a
-                            href="https://github.com/mmcxii/reactulator"
-                            class="portfolio__link--icon"
-                            target="blank"
-                        >
-                            <i class="social__icon fab fa-github"></i>
-                            <span class="sr-only">"The Reactulator" Github Repository</span>
+                            <span class="sr-only">"Which This is This" Github Repository</span>
                         </a>
                     </article>
 

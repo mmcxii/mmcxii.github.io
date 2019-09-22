@@ -147,12 +147,12 @@
             }
 
             &.react {
-                height: 25%;
+                height: 65%;
                 color: var(--clr-primary-dark);
 
                 @include mq(md) {
                     height: auto;
-                    width: 25%;
+                    width: 65%;
                 }
             }
         }

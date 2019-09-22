@@ -231,7 +231,7 @@ a {
 body {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: var(--icon-size) auto;
+  grid-template-columns: var(--icon-size) 1fr;
   grid-template-rows: -webkit-max-content 100vh auto -webkit-max-content;
   grid-template-rows: max-content 100vh auto max-content;
   grid-template-areas: 'header header' 'hero hero' 'main-content main-content' 'footer footer';
@@ -625,14 +625,14 @@ body {
 }
 
 .tech__bar--completed.react {
-  height: 25%;
+  height: 65%;
   color: var(--clr-primary-dark);
 }
 
 @media only screen and (min-width: 768px) {
   .tech__bar--completed.react {
     height: auto;
-    width: 25%;
+    width: 65%;
   }
 }
 
